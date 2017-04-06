@@ -1,0 +1,14 @@
+<canvas width="1000" height="600"></canvas>
+<script>
+    function desenhaRetangulo(x, y, color) {
+        var tela = document.querySelector('canvas')
+        var pincel = tela.getContext('2d')
+
+        pincel.fillStyle = color
+        pincel.fillRect(x, y, 1000, 200)
+    }
+
+    desenhaRetangulo(0, 0, 'blakc')
+    desenhaRetangulo(0, 200, 'red')
+    desenhaRetangulo(0, 400, 'yellow')
+</script>

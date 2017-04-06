@@ -1,0 +1,15 @@
+<canvas width="1000" height="600"></canvas>
+<script>
+    var base = document.querySelector('canvas')
+    var brush = base.getContext('2d')
+
+    // flag
+    brush.fillStyle = 'red'
+    brush.fillRect(0, 0, 1000, 600)
+
+    // white circle
+    brush.fillStyle = 'white'
+    brush.beginPath()
+    brush.arc(450, 300, 200, 0, 2 * 3.14)
+    brush.fill()
+</script>

@@ -1,0 +1,54 @@
+<canvas width="900" height="900"></canvas>
+
+<script>
+    function desenhaQuadradoVerde(x, y, color) {
+        var tela = document.querySelector('canvas');
+        var pincel = tela.getContext('2d');
+
+        pincel.fillStyle = color;
+        pincel.fillRect(x, y, 50, 50);
+
+        pincel.strokeStyle = 'black';
+        pincel.strokeRect(x, y, 50, 50);
+    }
+
+    // P
+    desenhaQuadradoVerde(0, 0, 'green');
+    desenhaQuadradoVerde(50, 0, 'green');
+    desenhaQuadradoVerde(100, 0, 'green');
+    desenhaQuadradoVerde(0, 50, 'green');
+    desenhaQuadradoVerde(100, 50, 'green');
+    desenhaQuadradoVerde(0, 100, 'green');
+    desenhaQuadradoVerde(50, 100, 'green');
+    desenhaQuadradoVerde(100, 50, 'green');
+    desenhaQuadradoVerde(100, 100, 'green');
+    desenhaQuadradoVerde(0, 150, 'green');
+    desenhaQuadradoVerde(0, 200, 'green');
+
+    // A
+    desenhaQuadradoVerde(200, 0, 'green');
+    desenhaQuadradoVerde(250, 0, 'green');
+    desenhaQuadradoVerde(300, 0, 'green');
+    desenhaQuadradoVerde(200, 50, 'green');
+    desenhaQuadradoVerde(300, 50, 'green');
+    desenhaQuadradoVerde(200, 100, 'green');
+    desenhaQuadradoVerde(250, 100, 'green');
+    desenhaQuadradoVerde(300, 100, 'green');
+    desenhaQuadradoVerde(200, 150, 'green');
+    desenhaQuadradoVerde(300, 150, 'green');
+    desenhaQuadradoVerde(200, 200, 'green');
+    desenhaQuadradoVerde(300, 200, 'green');
+
+    // U
+    desenhaQuadradoVerde(400, 0, 'green');
+    desenhaQuadradoVerde(500, 0, 'green');
+    desenhaQuadradoVerde(400, 50, 'green');
+    desenhaQuadradoVerde(500, 50, 'green');
+    desenhaQuadradoVerde(400, 100, 'green');
+    desenhaQuadradoVerde(500, 100, 'green');
+    desenhaQuadradoVerde(400, 150, 'green');
+    desenhaQuadradoVerde(500, 150, 'green');
+    desenhaQuadradoVerde(400, 200, 'green');
+    desenhaQuadradoVerde(450, 200, 'green');
+    desenhaQuadradoVerde(500, 200, 'green');
+</script>
